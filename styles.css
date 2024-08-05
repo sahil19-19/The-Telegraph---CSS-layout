@@ -3,6 +3,7 @@
     padding : 0;
 }
 
+/* header */
 header{
     text-align : center;
     font-family: Roboto,sans-serif;
@@ -21,13 +22,13 @@ header{
     border-bottom : 1px;
     border-style: solid;
     border-color: #aaa;
-    margin-top : 20px;
+    margin-top : 23px;
     height : 44px;
 }
 
 .navbar-container{
     width : 67.5%;
-    margin : 0 auto;
+    margin : 9px auto;
     display : flex;
     justify-content : space-between;
     align-items: center;
@@ -39,12 +40,7 @@ header{
 
 .navbar-container li{
     display : inline-block;
-    /* padding: 16px 0 14px; */
     padding-right: 30px;
-}
-
-.search-btn{
-    /* margin: 16px 0 14px; */
 }
 
 .page-name{
@@ -53,3 +49,6 @@ header{
     font-weight: bold;
     text-decoration: none;
 }
+
+
+/**/
