@@ -51,4 +51,47 @@ header{
 }
 
 
-/**/
+/*top-news*/
+.top-news{
+    width: 67.5%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.right-container{
+    flex: 317;
+    /* height: 1222px; */
+}
+
+.left-container{
+    flex : 963;
+}
+
+.top-news ul{
+    list-style: none;
+}
+.top-news img{
+    width: 100%;
+}
+.top-news figure{
+    width: 300px;
+    height: 200px;
+}
+
+.top-news-list li{
+    display: inline-block;
+    width: 316px;
+    height: 440px;
+}
+
+/* top-news, innerbox*/
+.inner-box{
+    display: flex;
+}
+.inner-box .left-box{
+    flex: 401;
+}
+
+.leadstory{
+    flex : 546;
+}
