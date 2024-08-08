@@ -1,160 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CSS Project- Newspaper homepage</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <a href="/" class="logo">
-                <img src="./assests/photos/logo.svg" alt="logo-image" class="logo-image">
-            </a>
-            <span class="date">Friday, 02 August 2024</span>
-            <nav class="navbar">
-                <div class="navbar-container">
-                    <div class="navbar-item">
-                        <a href="#" class="hamburger-btn" id="hbbtn"><img src="./assests/icons/hamburger.svg" alt="hamburger button"></a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Project- Newspaper homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="/" class="logo">
+            <img src="./assests/photos/logo.svg" alt="logo-image" class="logo-image">
+        </a>
+        <span class="date">Friday, 02 August 2024</span>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-item">
+                    <a href="#" class="hamburger-btn" id="hbbtn"><img src="./assests/icons/hamburger.svg"
+                            alt="hamburger button"></a>
+                </div>
+                <ul class="navbar-item">
+                    <li class="page">
+                        <a class="page-name" href="/">home</a>
+                    </li>
+                    <li class="page">
+                        <a class="page-name" href="#">opinion</a>
+                    </li>
+                    <li class="page">
+                        <a class="page-name" href="#">india</a>
+                    </li>
+                    <li class="page">
+                        <a class="page-name" href="#">kolkata</a>
+                    </li>
+                    <li class="page">
+                        <a class="page-name" href="#">world</a>
+                    </li>
+                    <li class="page">
+                        <a class="page-name" href="#">business</a>
+                    </li>
+                    <li class="page">
+                        <a class="page-name" href="#">sports</a>
+                    </li>
+                    <li class="page">
+                        <a class="page-name" href="#">my kolkata</a>
+                    </li>
+                    <li class="page">
+                        <a class="page-name" href="#">entertainment</a>
+                    </li>
+                    <li class="page">
+                        <a class="page-name" href="#">edugraph</a>
+                    </li>
+                    <li class="page">
+                        <a class="page-name" href="#">more</a>
+                    </li>
+                </ul>
+                <div class="navbar-item">
+                    <a href="#" class="search-btn">
+                        <img src="./assests/icons/searchicon.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="top-news">
+            <div class="left-container">
+                <div class="inner-box">
+                    <div class="left-box">
+                        <a class="main-news"
+                            href="https://www.telegraphindia.com/world/bangladesh-slides-into-chaos-hasina-flees-country-army-says-interim-government-to-take-over/cid/2038870">
+                            <h1>Sheikh Hasina in Delhi, Modi chairs meeting of Cabinet Committee on Security</h1>
+                            <p>It is learnt that the Bangladesh ex-PM has been moved to a safe location and is unlikely
+                                to leave India on Monday night.
+                                Her plan was to leave for London but there is now some uncertainty, sources told PTI</p>
+                        </a>
+                        <ul>
+                            <li class="top">
+                                <h2>
+                                    <a
+                                        href="world/the-kids-won-bangladesh-erupts-in-celebration-as-sheikh-hasina-resigns-as-pm-flees-country/cid/2038829">
+                                        ‘The kids won!’ Bangladesh erupts in celebration as Hasina resigns as PM, flees
+                                        country</a>
+                                </h2>
+                            </li>
+                            <li>
+                                <h2>
+                                    <a
+                                        href="gallery/bangladesh-unrest-thousands-take-to-the-streets-celebrating-sheikh-hasinas-ouster-photogallery/cid/2038860">
+                                        Thousands hit the streets, celebrate Hasina'a ouster, chaos engulfs Bangladesh
+                                    </a>
+                                </h2>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="navbar-item">
-                        <li class="page">
-                            <a class="page-name" href="/">home</a>
-                        </li>
-                        <li class="page">
-                            <a class="page-name" href="#">opinion</a>
-                        </li>
-                        <li class="page">
-                            <a class="page-name" href="#">india</a>
-                        </li>
-                        <li class="page">
-                            <a class="page-name" href="#">kolkata</a>
-                        </li>
-                        <li class="page">
-                            <a class="page-name" href="#">world</a>
-                        </li>
-                        <li class="page">
-                            <a class="page-name" href="#">business</a>
-                        </li>
-                        <li class="page">
-                            <a class="page-name" href="#">sports</a>
-                        </li>
-                        <li class="page">
-                            <a class="page-name" href="#">my kolkata</a>
-                        </li>
-                        <li class="page">
-                            <a class="page-name" href="#">entertainment</a>
-                        </li>
-                        <li class="page">
-                            <a class="page-name" href="#">edugraph</a>
-                        </li>
-                        <li class="page">
-                            <a class="page-name" href="#">more</a>
-                        </li>
-                    </ul>
-                    <div class="navbar-item">
-                        <a href="#" class="search-btn" >              
-                            <img src="./assests/icons/searchicon.svg" alt="">
+                    <div class="leadstory">
+                        <a
+                            href="india/india-cannot-afford-to-be-indifferent-peace-in-bangladesh-in-our-interest-shashi-tharoor/cid/2038866">
+                            <img class="lead-story-pic" src="./assests/photos/1690546508_tharoor.jpg"
+                                alt="Shashi Tharoor">
+                            <div class="content-box">
+                                <img src="./assests/icons/quote_left.svg" class="left-quote" alt="Quote left">
+                                <img src="./assests/icons/quote_right.svg" class="right-quote" alt="Quote right">
+                                <h2>
+                                    The change of govt in Bangladesh is unsettling; India cannot afford to be
+                                    indifferent
+                                </h2>
+                            </div>
                         </a>
                     </div>
                 </div>
-            </nav>
-        </header>
-
-        <main>
-            <section class="top-news">
-                <div class="left-container">
-                    <div class="inner-box">
-                        <div class="left-box">
-                            <a class="main-news" href="https://www.telegraphindia.com/world/bangladesh-slides-into-chaos-hasina-flees-country-army-says-interim-government-to-take-over/cid/2038870">
-                                <h1>Sheikh Hasina in Delhi, Modi chairs meeting of Cabinet Committee on Security</h1>
-                                <p>It is learnt that the Bangladesh ex-PM has been moved to a safe location and is unlikely to leave India on Monday night.
-                                Her plan was to leave for London but there is now some uncertainty, sources told PTI</p>
-                            </a>
-                            <ul>
-                                <li class="top">
-                                    <h2>
-                                       <a href="world/the-kids-won-bangladesh-erupts-in-celebration-as-sheikh-hasina-resigns-as-pm-flees-country/cid/2038829">
-                                           ‘The kids won!’ Bangladesh erupts in celebration as Hasina resigns as PM, flees country</a>
-                                    </h2>
-                                </li>
-                                <li>
-                                    <h2>
-                                        <a href="gallery/bangladesh-unrest-thousands-take-to-the-streets-celebrating-sheikh-hasinas-ouster-photogallery/cid/2038860">
-                                            Thousands hit the streets, celebrate Hasina'a ouster, chaos engulfs Bangladesh
-                                        </a>
-                                    </h2>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="leadstory">
-                            <a href="india/india-cannot-afford-to-be-indifferent-peace-in-bangladesh-in-our-interest-shashi-tharoor/cid/2038866">
-                                <img class="lead-story-pic" src="./assests/photos/1690546508_tharoor.jpg"  alt="Shashi Tharoor">
-                                <div class="content-box">
-                                    <img src="./assests/icons/quote_left.svg" class="left-quote" alt="Quote left">
-                                    <img src="./assests/icons/quote_right.svg" class="right-quote" alt="Quote right">
-                                    <h2>
-                                       The change of govt in Bangladesh is unsettling; India cannot afford to be indifferent
-                                    </h2>
-                                </div>
-                            </a>      
-                        </div>
-                    </div>
-                    <ul class="top-news-list" >
-                        <li class="news1">
-                            <a href="sports/defending-champion-neeraj-chopra-qualifies-for-olympic-mens-javelin-throw-finals-with-seasons-best-effort-of-89-34m-in-first-attempt/cid/2039049">
-                                <figure><img src="./assests/photos/1722941161_neeraj-chopra.jpg" 
+                <ul class="top-news-list">
+                    <li class="news1">
+                        <a
+                            href="sports/defending-champion-neeraj-chopra-qualifies-for-olympic-mens-javelin-throw-finals-with-seasons-best-effort-of-89-34m-in-first-attempt/cid/2039049">
+                            <figure><img src="./assests/photos/1722941161_neeraj-chopra.jpg"
                                     alt="India's Neeraj Chopra competes in the Men's javelin throw qualification round at the 2024 Summer Olympics, in Paris, France, Tuesday, Aug. 6, 2024.">
-                                </figure>
-                                <h2>Defending champion Neeraj Chopra qualifies for Olympic men's javelin throw finals in first attempt</h2>
-                            </a>
-                        </li>
-                        <li class="news2">
-                            <a href="india/allegation-of-ncert-dropping-preamble-to-constitution-from-textbooks-baseless-union-education-minister-dharmendra-pradhan/cid/2039041">
-                                <figure><img src="./assests/photos/1719070322_dharmendra-pradhan.jpg" 
+                            </figure>
+                            <h2>Defending champion Neeraj Chopra qualifies for Olympic men's javelin throw finals in
+                                first attempt</h2>
+                        </a>
+                    </li>
+                    <li class="news2">
+                        <a
+                            href="india/allegation-of-ncert-dropping-preamble-to-constitution-from-textbooks-baseless-union-education-minister-dharmendra-pradhan/cid/2039041">
+                            <figure><img src="./assests/photos/1719070322_dharmendra-pradhan.jpg"
                                     alt="Dharmendra Pradhan">
-                                </figure>
-                                <h2>Allegation of NCERT dropping Preamble to Constitution from textbooks baseless: Pradhan</h2>
-                            </a>
-                        </li>
-                        <li class="news3">
-                            <a href="india/allegation-of-ncert-dropping-preamble-to-constitution-from-textbooks-baseless-union-education-minister-dharmendra-pradhan/cid/2039041">
-                                <figure><img src="./assests/photos/1719070322_dharmendra-pradhan.jpg" 
+                            </figure>
+                            <h2>Allegation of NCERT dropping Preamble to Constitution from textbooks baseless: Pradhan
+                            </h2>
+                        </a>
+                    </li>
+                    <li class="news3">
+                        <a
+                            href="india/allegation-of-ncert-dropping-preamble-to-constitution-from-textbooks-baseless-union-education-minister-dharmendra-pradhan/cid/2039041">
+                            <figure><img src="./assests/photos/1719070322_dharmendra-pradhan.jpg"
                                     alt="Dharmendra Pradhan">
-                                </figure>
-                                <h2>Allegation of NCERT dropping Preamble to Constitution from textbooks baseless: Pradhan</h2>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="right-container">
-                    <!-- <div class="empty-top-space"></div> -->
-                    <ul>
-                        <li class="news1">
-                            <a href="sports/shooters-kim-yeji-and-yusuf-dikec-style-queen-and-friendly-hitman-turn-olympic-silver-medals-into-internet-gold/cid/2039046">
-                                <figure><img src="https://assets.telegraphindia.com/telegraph/2024/Aug/1722937866_two-window.jpg" 
+                            </figure>
+                            <h2>Allegation of NCERT dropping Preamble to Constitution from textbooks baseless: Pradhan
+                            </h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-container">
+                <!-- <div class="empty-top-space"></div> -->
+                <ul>
+                    <li class="news1">
+                        <a
+                            href="sports/shooters-kim-yeji-and-yusuf-dikec-style-queen-and-friendly-hitman-turn-olympic-silver-medals-into-internet-gold/cid/2039046">
+                            <figure><img
+                                    src="https://assets.telegraphindia.com/telegraph/2024/Aug/1722937866_two-window.jpg"
                                     alt="Shooters Kim Yeji and Yusuf Dikeç">
-                                </figure>
-                                <h2>Shooters Kim Yeji and Yusuf Dikeç, ‘style queen’ and friendly ‘hitman’, turn Olympic silver medals into internet gold</h2>
-                            </a>
-                        </li>
-                        <li class="news2">
-                            <a data-widget="home-atf-non-image-stry-9" href="world/whats-behind-the-anti-immigrant-violence-that-has-exploded-across-britain-heres-a-look/cid/2039016">
-                                <figure><img src="https://assets.telegraphindia.com/telegraph/2024/Aug/1722932504_britain.jpg" 
+                            </figure>
+                            <h2>Shooters Kim Yeji and Yusuf Dikeç, ‘style queen’ and friendly ‘hitman’, turn Olympic
+                                silver medals into internet gold</h2>
+                        </a>
+                    </li>
+                    <li class="news2">
+                        <a data-widget="home-atf-non-image-stry-9"
+                            href="world/whats-behind-the-anti-immigrant-violence-that-has-exploded-across-britain-heres-a-look/cid/2039016">
+                            <figure><img
+                                    src="https://assets.telegraphindia.com/telegraph/2024/Aug/1722932504_britain.jpg"
                                     alt="A demonstrator holds a shield during an anti-immigration protest, in Rotherham, Britain.">
-                                </figure>
-                                <h2>What's behind anti-immigrant violence that has exploded across UK? Here's a look</h2>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-        <footer>
-        </footer>
-    </body>
-</html>
+                            </figure>
+                            <h2>What's behind anti-immigrant violence that has exploded across UK? Here's a look</h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="space-div"></div>
 
+        <section class="videos">
+            <h2 class="title"><a href="video">VIDEOS</a></h2>
+            <ul class="list">
+                <li>
+                    <a href="video/wayanad-landslide-explained-how-tourist-town-wayanad-became-the-pit-of-death-in-just-few-hours/cid/2038731">
+                        <figure>
+                            <img
+                                src="https://assets.telegraphindia.com/telegraph/2024/Jul/1722411186_reuters-wayanad.jpg"
+                                alt="Incessant rain triggered landslides that wiped off two villages left a trail of destruction.">
+                            <i><img src="/revamp-assets/desktop/images/video-icon.svg"
+                                alt="Video Icon"></i>
+                        </figure>
+                        <h2>
+                            Bodies pile up in Wayanad’s watery grave — was it possible to avert the tragedy?
+                        </h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="video/not-just-quota-reforms-behind-the-bangladesh-violence-is-rampant-unemployment/cid/2035100">
+                        <figure>
+                            <img
+                                src="https://assets.telegraphindia.com/telegraph/2024/Jul/1721489745_whatsappimage2024-07-20at8-45-08pm1.jpeg"
+                                alt="Why is Bangladesh burning?">
+                            <i><img src="/revamp-assets/desktop/images/video-icon.svg"
+                                    alt="Video Icon"></i>
+                        </figure>
+                        <h2>
+                            How did a peaceful quota protest in Bangladesh take such a violent turn?
+                        </h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="video/1978-hectare-destroyed-in-last-few-years-why-uttarakhands-forests-are-getting-out-of-control-each-year/cid/2035099">
+                        <figure>
+                            <img
+                                src="https://assets.telegraphindia.com/telegraph/2024/Jul/1721565433_file-1.jpg"
+                                alt="Uttarakhand forest fires">
+                            <i><img src="/revamp-assets/desktop/images/video-icon.svg"
+                                    alt="Video Icon"></i>
+                        </figure>
+                        <h2>
+                            Why is Uttarakhand losing 45 hectare of forestland every month?
+                        </h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="video/how-delhi-coaching-centre-deaths-expose-major-lapses-by-delhi-government-mcd/cid/2037683">
+                        <figure>
+                            <img
+                                src="https://assets.telegraphindia.com/telegraph/2024/Jul/1722430654_whatsapp-image-2024-07-31-at-4-31-34-pm.jpg"
+                                alt="Rau's IAS center photo">
+                            <i><img src="/revamp-assets/desktop/images/video-icon.svg"
+                                    alt="Video Icon"></i>
+                        </figure>
+                        <h2>
+                            Who Killed Shreya, Tanya and Nevin — Horrific Coaching Centre Deaths Expose Major Lapses
+                        </h2>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

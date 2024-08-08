@@ -221,3 +221,37 @@ a{
 .right-container .news2{
     margin-top: 25px;
 }
+
+
+/* .space-div{
+    max-width: 1296px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 48px;
+} */
+
+/* section-2: videos */
+.videos{
+    padding-top: 80px;
+    padding-bottom: 32px;
+    width: 67.5%;
+    margin: 0 auto;
+}
+.videos .list{
+    list-style: none;
+    margin-top: 24px;
+}
+.videos .title{
+    font-size: 36px;
+    font-family: Roboto;
+    text-align: center;
+}
+.videos img{
+    width: 100%;
+}
+.videos li{
+    display: inline-block;
+    width: 300px;
+    min-height: 240px;
+    vertical-align: top;
+}
