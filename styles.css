@@ -243,13 +243,6 @@ a {
 }
 
 
-/* .space-div{
-    max-width: 1296px;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 48px;
-} */
-
 /* section-2: videos */
 .videos {
     padding-top: 128px;
@@ -257,8 +250,7 @@ a {
     width: 67.5%;
     margin: 0 auto;
     margin-top: 2px;
-    border-top: 1px solid #d8d4cc ;
-    
+    border-top: 1px solid #d8d4cc;
 }
 
 .videos .list {
@@ -299,16 +291,83 @@ a {
     padding: 16px 24px 0;
     font-weight: 700;
 }
-.videos i{
+
+.videos i {
     width: 50px;
     height: 50px;
     display: inline-block;
     position: relative;
     bottom: 55px;
 }
-.videos .video-icon{
+
+.videos .video-icon {
     width: 100%;
 }
-.videos figure{
-    height: 200px;   
+
+.videos figure {
+    height: 200px;
+}
+
+
+/* shorts */
+.shorts {
+    width: 67.5%;
+    margin: 0 auto;
+}
+
+.shorts .title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.44px;
+    color: #444;
+    padding: 30px 0 32px;
+    font-family: Roboto;
+}
+
+.shorts .list {
+    list-style: none;
+}
+
+.shorts .list-item {
+    width: 302px;
+    border-radius: 16px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .1607843137);
+    padding: 16px;
+    min-height: 688px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25px;
+    box-sizing: border-box;
+}
+
+.shorts .list-item-last {
+    margin: 0;
+}
+
+.shorts img {
+    width: 100%;
+}
+
+.shorts i {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    bottom: 55px;
+}
+
+.shorts .video-icon {
+    width: 100%;
+}
+
+.shorts .list-item h2{
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 16px;
+    line-height: 32px;
+
+}
+
+.shorts .list-item figure{
+    height: 480px;
 }
