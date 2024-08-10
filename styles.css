@@ -312,7 +312,8 @@ a {
 /* shorts */
 .shorts {
     width: 67.5%;
-    margin: 0 auto;
+    margin: 0 auto 30px;
+    border-bottom: 4px solid #d8d4cc;
 }
 
 .shorts .title {
@@ -360,7 +361,7 @@ a {
     width: 100%;
 }
 
-.shorts .list-item h2{
+.shorts .list-item h2 {
     font-size: 20px;
     font-weight: normal;
     padding-top: 16px;
@@ -368,6 +369,31 @@ a {
 
 }
 
-.shorts .list-item figure{
+.shorts .list-item figure {
     height: 480px;
+}
+
+.shorts .leftarrow {
+    width: 48px;
+    height: 48px;
+    background: #dfdad0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 45%;
+    transform: rotate(180deg);
+    margin: 45px 0;
+}
+
+.shorts .rightarrow{
+    width: 48px;
+    height: 48px;
+    background: #dfdad0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 47%;
+    margin: 45px 0;
 }
