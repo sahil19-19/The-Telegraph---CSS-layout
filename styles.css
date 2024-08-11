@@ -386,7 +386,7 @@ a {
     margin: 45px 0 55px;
 }
 
-.shorts .rightarrow{
+.shorts .rightarrow {
     width: 48px;
     height: 48px;
     background: #dfdad0;
@@ -399,3 +399,81 @@ a {
 }
 
 /* top-picks */
+.top-picks {
+    width: 67.5%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.top-picks img {
+    width: 100%;
+}
+
+.top-picks .left-container {
+    flex: 786;
+    background-color: #f8f4e7;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.top-picks,
+.right-container {
+    flex: 509;
+}
+
+.top-picks .left-container .title {
+    font-size: 36px;
+    font-family: Roboto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.top-picks .left-container span {
+    font-size: 14px;
+    color: grey;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    padding-top: 8px;
+}
+
+.top-picks .left-container .topick-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 24px;
+    list-style: none;
+}
+
+.top-picks .topick-list .left {
+    border-right: 1px solid #C7C3BC;
+    max-width: 344px;
+    padding-right: 24px;
+    min-height: 381px;
+}
+
+.top-picks .topick-list .right {
+    max-width: 344px;
+    padding-left: 24px;
+    min-height: 381px;
+}
+
+.top-picks .topick-list h2 {
+    font-size: 24px;
+    line-height: 32px;
+    padding: 24px;
+    padding-bottom: 0;
+}
+
+/* .top-picks .topick-list .top {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #C7C3BC ;
+} */
+
+hr{
+    transform: rotate(90deg);
+    display: block;
+    position: relative;
+    left: 50%;
+}
