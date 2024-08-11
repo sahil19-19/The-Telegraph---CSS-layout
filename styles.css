@@ -383,7 +383,7 @@ a {
     position: relative;
     left: 45%;
     transform: rotate(180deg);
-    margin: 45px 0;
+    margin: 45px 0 55px;
 }
 
 .shorts .rightarrow{
@@ -397,3 +397,5 @@ a {
     left: 47%;
     margin: 45px 0;
 }
+
+/* top-picks */
