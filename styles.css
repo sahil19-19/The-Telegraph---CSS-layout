@@ -416,8 +416,7 @@ a {
     box-sizing: border-box;
 }
 
-.top-picks,
-.right-container {
+.top-picks .right-container {
     flex: 509;
 }
 
@@ -477,3 +476,13 @@ hr{
     position: relative;
     left: 50%;
 }
+
+.top-picks .right-container .trending-list{
+    list-style: none;
+}
+
+.top-picks  .right-container figure{
+    width: 200px;
+    display: inline-block;
+}
+/* display: inline-block; */
