@@ -312,7 +312,7 @@ a {
 /* shorts */
 .shorts {
     width: 67.5%;
-    margin: 0 auto 30px;
+    margin: 0 auto 3px;
     border-bottom: 4px solid #d8d4cc;
 }
 
@@ -399,10 +399,16 @@ a {
 }
 
 /* top-picks */
+/* left container*/
+
 .top-picks {
     width: 67.5%;
-    margin: 0 auto;
+    margin: 0 auto 100px;
+    padding-top: 48px;
+    padding-bottom: 24px;
     display: flex;
+    border-bottom: 4px solid #d8d4cc;
+    border-top: 1px solid #d8d4cc ;
 }
 
 .top-picks img {
@@ -414,10 +420,6 @@ a {
     background-color: #f8f4e7;
     padding: 24px;
     box-sizing: border-box;
-}
-
-.top-picks .right-container {
-    flex: 509;
 }
 
 .top-picks .left-container .title {
@@ -444,17 +446,19 @@ a {
     list-style: none;
 }
 
-.top-picks .topick-list .left {
-    border-right: 1px solid #C7C3BC;
+.top-picks .topick-list li {
+    margin-bottom: 68px;
     max-width: 344px;
-    padding-right: 24px;
     min-height: 381px;
 }
 
+.top-picks .topick-list .left {
+    border-right: 1px solid #C7C3BC;
+    padding-right: 24px;
+}
+
 .top-picks .topick-list .right {
-    max-width: 344px;
     padding-left: 24px;
-    min-height: 381px;
 }
 
 .top-picks .topick-list h2 {
@@ -464,25 +468,52 @@ a {
     padding-bottom: 0;
 }
 
-/* .top-picks .topick-list .top {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #C7C3BC ;
-} */
-
-hr{
-    transform: rotate(90deg);
-    display: block;
+.top-picks .left-container .left-top::after,
+.top-picks .left-container .right-top::after {
+    content: "";
+    width: 107%;
+    height: 1px;
+    background-color: #c5c0b5;
     position: relative;
-    left: 50%;
+    bottom: -40px;
+    display: inline-block;
 }
 
-.top-picks .right-container .trending-list{
+.top-picks .left-container .right-top::after {
+    right: 25px;
+}
+/* top-picks right containter */
+.top-picks .right-container {
+    flex: 509;
+}
+
+.top-picks .right-container .title {
+    font-size: 36px;
+    font-family: Roboto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.top-picks .right-container .trending-list {
     list-style: none;
 }
 
-.top-picks  .right-container figure{
-    width: 200px;
-    display: inline-block;
+.top-picks .right-container li {
+    padding: 32px 0 16px;
+    border-bottom: 1px solid #C7C3BC;
+    min-height: 85px;
+    box-sizing: border-box;
 }
-/* display: inline-block; */
+
+.top-picks .right-container a {
+    display: flex;
+}
+
+.top-picks .right-container figure {
+    flex: 128;
+    margin-right: 16px;
+}
+
+.top-picks .right-container h3 {
+    flex: 332;
+}
