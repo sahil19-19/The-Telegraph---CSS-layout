@@ -16,6 +16,10 @@ a {
     color: black;
 }
 
+ul{
+    list-style: none;
+}
+
 .logo {
     display: block;
     padding-bottom: 8px;
@@ -39,9 +43,9 @@ a {
     align-items: center;
 }
 
-.navbar-container ul {
+/* .navbar-container ul {
     list-style: none;
-}
+} */
 
 .navbar-container li {
     display: inline-block;
@@ -520,3 +524,15 @@ a {
 
 
 /*kolkata*/
+.kolkata {
+    width: 67.5%;
+    margin: 0 auto;
+    border-bottom: 4px solid #B70100;
+    min-height: 970px;
+}
+
+.kolkata .title{
+    font-size: 36px;
+    font-family: Roboto;
+    text-align: center;
+}
