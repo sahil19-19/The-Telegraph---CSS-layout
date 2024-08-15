@@ -16,7 +16,7 @@ a {
     color: black;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -407,12 +407,12 @@ ul{
 
 .top-picks {
     width: 67.5%;
-    margin: 0 auto 100px;
+    margin: 0 auto 3px;
     padding-top: 48px;
     padding-bottom: 24px;
     display: flex;
     border-bottom: 4px solid #d8d4cc;
-    border-top: 1px solid #d8d4cc ;
+    border-top: 1px solid #d8d4cc;
 }
 
 .top-picks img {
@@ -486,6 +486,7 @@ ul{
 .top-picks .left-container .right-top::after {
     right: 25px;
 }
+
 /* top-picks right containter */
 .top-picks .right-container {
     flex: 509;
@@ -529,10 +530,157 @@ ul{
     margin: 0 auto;
     border-bottom: 4px solid #B70100;
     min-height: 970px;
+    border-top: 1px solid #d8d4cc;
+    padding-top: 96px ;
 }
 
-.kolkata .title{
+.kolkata img {
+    width: 100%;
+}
+
+.kolkata .title {
     font-size: 36px;
     font-family: Roboto;
     text-align: center;
+}
+
+.kolkata .nav-list {
+    text-align: center;
+    padding: 24px 0 16px;
+    border-bottom: 1px solid #C7C3BC;
+    margin-bottom: 24px;
+}
+
+.kolkata .nav-list li {
+    display: inline-block;
+}
+
+.kolkata .nav-list a {
+    display: inline-block;
+    border-right: 1px solid black;
+    padding: 0 16px;
+    color: #b70000;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Roboto;
+    height: 15px;
+}
+
+.kolkata .nav-list .last {
+    border: 0;
+}
+
+.kolkata .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kolkata .container i {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    bottom: 53px;
+    background-color: #b80000;
+    display: flex;
+}
+
+.kolkata .container .left {
+    max-width: 480px;
+    text-align: center;
+    min-height: 795px;
+}
+
+.kolkata .container .left h2 {
+    font-size: 35px;
+    line-height: 46px;
+    margin: 56px 24px 40px;
+}
+
+.kolkata .container .left p {
+    line-height: 24px;
+    font-family: Roboto;
+    padding: 0 24px;
+    color: #555;
+}
+
+.kolkata .container .center {
+    max-width: 426px;
+    padding: 0 24px;
+    border-left: 1px solid #C7C3BC;
+    border-right: 1px solid #C7C3BC;
+}
+
+.kolkata .container .center h2 {
+    font-size: 27px;
+    line-height: 36px;
+    margin: 16px 0 32px;
+}
+
+.kolkata .container .center li {
+    border-top: 1px solid #C7C3BC;
+    padding: 48px 0 32px;
+}
+
+.kolkata .center .list a {
+    display: flex;
+}
+
+.kolkata .center .list figure {
+    width: 162px;
+    margin-left: 16px;
+    flex-shrink: 0;
+}
+
+.kolkata .center .list h2 {
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0;
+}
+
+.kolkata .container .right {
+    max-width: 294px;
+}
+
+.kolkata .right .image {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.kolkata .right img {
+    width: 184px;
+}
+
+.kolkata .right .list {
+    padding-top: 8px;
+}
+
+.kolkata .right .list li {
+    border-bottom: 1px dashed #999999;
+    padding: 32px 0 24px 0;
+    box-sizing: border-box;
+}
+
+.kolkata .right .list .last{
+    border: 0;
+}
+
+.kolkata .right .list h3 {
+    font-size: 16px;
+    color: #B70100;
+    text-transform: uppercase;
+    font-family: Roboto;
+    display: flex;
+}
+
+.kolkata .right .list p{
+    padding-top: 8px;
+}
+
+.kolkata .right .list img {
+    width: 32px;
+    position: relative;
+    bottom: 2px;
+    padding-right: 16px;
 }
