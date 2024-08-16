@@ -531,7 +531,7 @@ ul {
     border-bottom: 4px solid #B70100;
     min-height: 970px;
     border-top: 1px solid #d8d4cc;
-    padding-top: 96px ;
+    padding-top: 96px;
 }
 
 .kolkata img {
@@ -662,7 +662,7 @@ ul {
     box-sizing: border-box;
 }
 
-.kolkata .right .list .last{
+.kolkata .right .list .last {
     border: 0;
 }
 
@@ -674,7 +674,7 @@ ul {
     display: flex;
 }
 
-.kolkata .right .list p{
+.kolkata .right .list p {
     padding-top: 8px;
 }
 
@@ -683,4 +683,125 @@ ul {
     position: relative;
     bottom: 2px;
     padding-right: 16px;
+}
+
+/* opinion section */
+
+.opinion {
+    width: 67.5%;
+    margin: 0 auto;
+    border-top: 1px solid #B70100;
+    padding-top: 48px;
+    margin-top: 3px;
+}
+
+.opinion img {
+    width: 100%;
+}
+
+.opinion .title {
+    font-size: 36px;
+    font-family: Roboto;
+    text-align: center;
+}
+
+.opinion .topnews {
+    background-color: #f8f4e7;
+    display: flex;
+    max-height: 432px;
+    margin-top: 24px;
+}
+
+.opinion .topnews .contentbox {
+    padding: 72px 72px 42px;
+    text-align: center;
+}
+
+.opinion .topnews figure {
+    max-width: 648px;
+    flex-shrink: 0;
+}
+
+.opinion .topnews .contentbox h2 {
+    font-size: 35px;
+    line-height: 46px;
+}
+
+.opinion .topnews .contentbox p {
+    line-height: 22px;
+    padding-top: 32px;
+    color: gray;
+    font-family: Roboto;
+}
+
+.opinion .topnews .contentbox span {
+    color: #b70000;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: bold;
+    padding-top: 66px;
+    display: block;
+}
+
+.opinion .list {
+    padding-top: 24px;
+    border-top: 1px solid #C7C3BC;
+    margin-top: 24px;
+}
+
+.opinion li {
+    display: inline-block;
+    border-right: 1px solid #C7C3BC;
+    max-width: 298.8px;
+    vertical-align: top;
+    padding: 0 16px 0 12px;
+}
+
+.opinion .list .first {
+    padding-left: 0;
+}
+
+.opinion .list .last {
+    padding-right: 0;
+}
+
+.opinion .list-contentbox {
+    padding: 0 24px 32px;
+    border-bottom: 4px solid #d8d4cc;
+    text-align: center;
+    min-height: 355px;
+    box-sizing: border-box;
+}
+
+.opinion .list-contentbox h2 {
+    font-size: 20px;
+    /* line-height: var(--lh28); */
+    padding-top: 16px;
+}
+
+.opinion .list-contentbox p {
+    line-height: 22px;
+    color: gray;
+    margin-top: 16px;
+    font-family: Roboto;
+}
+
+.opinion .list-contentbox span {
+    color: #b70000;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: bold;
+    padding-top: 24px;
+    display: block;
+}
+
+.opinion .list-contentbox::after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #d8d4cc;
+    position: relative;
+    bottom: -100px;
+    /* left: 0; */
 }
