@@ -687,29 +687,36 @@ ul {
 
 /* opinion section */
 
-.opinion {
+.opinion,
+.india {
     width: 67.5%;
     margin: 0 auto;
-    border-top: 1px solid #B70100;
     padding-top: 48px;
-    margin-top: 3px;
 }
 
-.opinion img {
+.opinion {
+    margin-top: 3px;
+    border-top: 1px solid #B70100;
+}
+
+.opinion img,
+.india img {
     width: 100%;
 }
 
-.opinion .title {
+.opinion .title,
+.india .title {
     font-size: 36px;
     font-family: Roboto;
     text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
 }
 
 .opinion .topnews {
     background-color: #f8f4e7;
     display: flex;
     max-height: 432px;
-    margin-top: 24px;
 }
 
 .opinion .topnews .contentbox {
@@ -763,6 +770,7 @@ ul {
 
 .opinion .list .last {
     padding-right: 0;
+    border: 0;
 }
 
 .opinion .list-contentbox {
@@ -798,10 +806,45 @@ ul {
 .opinion .list-contentbox::after {
     display: inline-block;
     content: "";
-    width: 100%;
+    width: 119%;
     height: 1px;
     background: #d8d4cc;
     position: relative;
-    bottom: -100px;
-    /* left: 0; */
+    bottom: -108px;
+    left: -23px;
+}
+
+/* india*/
+.india .topdiv {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #C7C3BC ;
+    margin-bottom: 24px;
+}
+
+.india .topdiv .rightbox {
+    width: 299px;
+    border-left: 1px solid #C7C3BC;
+    padding-left: 16px;
+    flex-shrink: 0;
+}
+
+.india .topdiv .topnews h2 {
+    margin: 80px 32px 0;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.india .topdiv .topnews figure {
+    max-width: 560px;
+    flex-shrink: 0;
+}
+
+.india .topdiv .topnews{
+    background-color: #f8f4e7;
+    display: flex;
+    width: 964px;
+    max-height: 374px;
 }
