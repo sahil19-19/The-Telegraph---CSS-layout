@@ -812,7 +812,8 @@ ul {
 }
 
 /* india*/
-.india {
+.india,
+.bengal{
     width: 67.5%;
     margin: 0 auto;
     padding-top: 48px;
@@ -821,11 +822,13 @@ ul {
     margin-bottom: 100px;
 }
 
-.india img {
+.india img , 
+.bengal img{
     width: 100%;
 }
 
-.india .title {
+.india .title,
+.bengal .title {
     font-size: 36px;
     font-family: Roboto;
     text-align: center;
@@ -833,7 +836,8 @@ ul {
     margin-bottom: 24px;
 }
 
-.india .topdiv {
+.india .topdiv,
+.bengal .topdiv {
     display: flex;
     justify-content: space-between;
     padding-bottom: 24px;
@@ -841,40 +845,46 @@ ul {
     margin-bottom: 24px;
 }
 
-.india .topdiv .rightbox {
+.india .topdiv .rightbox,
+.bengal .rightbox{
     width: 299px;
     border-left: 1px solid #C7C3BC;
     padding-left: 16px;
     flex-shrink: 0;
 }
 
-.india .topdiv .topnews h2 {
+.india .topdiv .topnews h2 ,
+.bengal .topdiv .topnews h2{
     margin: 80px 32px 0;
     font-size: 32px;
     line-height: 44px;
     text-align: center;
 }
 
-.india .topdiv .rightbox h2 {
+.india .topdiv .rightbox h2,
+.bengal .topdiv .rightbox h2 {
     font-size: 24px;
     line-height: 32px;
     padding: 8px 16px 0;
     text-align: center;
 }
 
-.india .topdiv .topnews figure {
+.india .topdiv .topnews figure,
+.bengal .topdiv .topnews figure {
     max-width: 560px;
     flex-shrink: 0;
 }
 
-.india .topdiv .topnews {
+.india .topdiv .topnews,
+.bengal .topdiv .topnews {
     background-color: #f8f4e7;
     display: flex;
     width: 964px;
     max-height: 374px;
 }
 
-.india .bottom-list li {
+.india .bottom-list li,
+.bengal .bottom-list li {
     display: inline-block;
     width: 298.8px;
     border-right: 1px solid #C7C3BC;
@@ -883,16 +893,19 @@ ul {
     height: 370px;
 }
 
-.india .bottom-list .first {
+.india .bottom-list .first,
+.bengal .bottom-list .first {
     padding-left: 0;
 }
 
-.india .bottom-list .last {
+.india .bottom-list .last,
+.bengal .bottom-list .last {
     border: 0;
     padding-right: 0;
 }
 
-.india .bottom-list h2 {
+.india .bottom-list h2,
+.bengal .bottom-list h2 {
     margin: 16px 24px 24px;
     font-size: 20px;
     line-height: 27px;
