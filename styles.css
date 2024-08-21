@@ -813,21 +813,30 @@ ul {
 
 /* india*/
 .india,
+.business,
 .bengal{
     width: 67.5%;
     margin: 0 auto;
     padding-top: 48px;
     padding-bottom: 24px;
     border-bottom: 4px solid #d8d4cc;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
+}
+
+.business,
+.bengal{
+    border-top: 1px solid #d8d4cc;
+    margin-top:3px;
 }
 
 .india img , 
+.business img,
 .bengal img{
     width: 100%;
 }
 
 .india .title,
+.business .title,
 .bengal .title {
     font-size: 36px;
     font-family: Roboto;
@@ -837,6 +846,7 @@ ul {
 }
 
 .india .topdiv,
+.business .topdiv,
 .bengal .topdiv {
     display: flex;
     justify-content: space-between;
@@ -846,6 +856,7 @@ ul {
 }
 
 .india .topdiv .rightbox,
+.business .rightbox,
 .bengal .rightbox{
     width: 299px;
     border-left: 1px solid #C7C3BC;
@@ -854,6 +865,7 @@ ul {
 }
 
 .india .topdiv .topnews h2 ,
+.business .topdiv .topnews h2,
 .bengal .topdiv .topnews h2{
     margin: 80px 32px 0;
     font-size: 32px;
@@ -862,6 +874,7 @@ ul {
 }
 
 .india .topdiv .rightbox h2,
+.business .topdiv .rightbox h2,
 .bengal .topdiv .rightbox h2 {
     font-size: 24px;
     line-height: 32px;
@@ -870,12 +883,14 @@ ul {
 }
 
 .india .topdiv .topnews figure,
+.business .topdiv .topnews figure,
 .bengal .topdiv .topnews figure {
     max-width: 560px;
     flex-shrink: 0;
 }
 
 .india .topdiv .topnews,
+.business .topdiv .topnews,
 .bengal .topdiv .topnews {
     background-color: #f8f4e7;
     display: flex;
@@ -884,6 +899,7 @@ ul {
 }
 
 .india .bottom-list li,
+.business .bottom-list li,
 .bengal .bottom-list li {
     display: inline-block;
     width: 298.8px;
@@ -894,17 +910,20 @@ ul {
 }
 
 .india .bottom-list .first,
+.business .bottom-list .first,
 .bengal .bottom-list .first {
     padding-left: 0;
 }
 
 .india .bottom-list .last,
+.business .bottom-list .last,
 .bengal .bottom-list .last {
     border: 0;
     padding-right: 0;
 }
 
 .india .bottom-list h2,
+.business .bottom-list h2,
 .bengal .bottom-list h2 {
     margin: 16px 24px 24px;
     font-size: 20px;
