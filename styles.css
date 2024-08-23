@@ -814,6 +814,7 @@ ul {
 /* india*/
 .india,
 .business,
+.world,
 .bengal{
     width: 67.5%;
     margin: 0 auto;
@@ -824,6 +825,7 @@ ul {
 }
 
 .business,
+.world,
 .bengal{
     border-top: 1px solid #d8d4cc;
     margin-top:3px;
@@ -831,17 +833,29 @@ ul {
 
 .india img , 
 .business img,
+.world img,
 .bengal img{
     width: 100%;
 }
 
 .india .title,
 .business .title,
+.world .title,
 .bengal .title {
     font-size: 36px;
     font-family: Roboto;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.world .title-small{
+    text-align : center;
+    font-size: 24px;
+    line-height : 36px;
+    font-family: Roboto;
+    text-transform : uppercase;
+    margin-top: 60px;
     margin-bottom: 24px;
 }
 
@@ -900,6 +914,7 @@ ul {
 
 .india .bottom-list li,
 .business .bottom-list li,
+.world .bottom-list li,
 .bengal .bottom-list li {
     display: inline-block;
     width: 298.8px;
@@ -909,14 +924,20 @@ ul {
     height: 370px;
 }
 
+.world .bottom-list li{
+    height : 345px;
+}
+
 .india .bottom-list .first,
 .business .bottom-list .first,
+.world .bottom-list .first,
 .bengal .bottom-list .first {
     padding-left: 0;
 }
 
 .india .bottom-list .last,
 .business .bottom-list .last,
+.world .bottom-list .last,
 .bengal .bottom-list .last {
     border: 0;
     padding-right: 0;
@@ -924,8 +945,10 @@ ul {
 
 .india .bottom-list h2,
 .business .bottom-list h2,
+.world .bottom-list h2,
 .bengal .bottom-list h2 {
     margin: 16px 24px 24px;
     font-size: 20px;
     line-height: 27px;
 }
+
