@@ -70,7 +70,7 @@ ul {
     border-bottom: 4px solid #d8d4cc;
 }
 
-.left-container {
+.top-news .left-container {
     flex: 963;
 }
 
@@ -88,27 +88,27 @@ ul {
 }
 
 /* top-news, innerbox*/
-.inner-box {
+.top-bews .inner-box {
     display: flex;
     padding-bottom: 24px;
     border-bottom: 1px solid #C7C3BC;
 }
 
-.left-box {
+.top-news .left-box {
     flex: 384;
     padding-right: 16px;
     margin-right: 16px;
     border-right: 1px solid #C7C3BC;
 }
 
-.left-box h1 {
+.top-news .left-box h1 {
     font-weight: 700;
     font-size: 38px;
     line-height: 52px;
     font-family: serif;
 }
 
-.left-box p {
+.top-news .left-box p {
     font-size: 16px;
     line-height: 24px;
     font-family: Roboto;
@@ -117,7 +117,7 @@ ul {
     margin-bottom: 24px;
 }
 
-.left-box li {
+.top-news .left-box li {
     padding-top: 48px;
     padding-left: 16px;
     padding-bottom: 28px;
@@ -125,7 +125,7 @@ ul {
     position: relative;
 }
 
-.left-box li::before {
+.top-news .left-box li::before {
     content: "";
     position: absolute;
     left: 0;
@@ -136,42 +136,42 @@ ul {
     /* display: inline-block; */
 }
 
-.left-box .top {
+.top-news .left-box .top {
     border-bottom: 1px solid #C7C3BC;
 }
 
-.main-news {
+.top-news .main-news {
     border-bottom: 1px solid #C7C3BC;
     height: 397px;
     display: block;
 }
 
 
-/* leadstory */
-.leadstory {
+/* topnews leadstory */
+.top-news .leadstory {
     flex: 530;
     padding: 8px;
     border: 1px solid black;
 }
 
-.leadstory a {
+.top-news .leadstory a {
     background: #f8f4e7;
     display: block;
     height: 100%;
 }
 
-.content-box {
+.top-news .content-box {
     position: relative;
     padding: 80px 96px;
 }
 
-.content-box h2 {
+.top-news .content-box h2 {
     font-size: 32px;
     line-height: 44px;
     text-align: center;
 }
 
-.leadstory .left-quote {
+.top-news .leadstory .left-quote {
     position: absolute;
     left: 32px;
     top: 50%;
@@ -179,7 +179,7 @@ ul {
     width: initial;
 }
 
-.leadstory .right-quote {
+.top-news .leadstory .right-quote {
     position: absolute;
     right: 32px;
     top: 50%;
@@ -188,32 +188,32 @@ ul {
 }
 
 /* top news list */
-.top-news-list {
+.top-news .top-news-list {
     margin-top: 24px;
 }
 
-.top-news-list li {
+.top-news .top-news-list li {
     display: inline-block;
     max-width: 300px;
     min-height: 430px;
     vertical-align: top;
 }
 
-.top-news-list .news1 {
+.top-news .top-news-list .news1 {
     padding-right: 13px;
     border-right: 1px solid #C7C3BC;
 }
 
-.top-news-list .news2 {
+.top-news .top-news-list .news2 {
     padding: 0 13px 0 13px;
     border-right: 1px solid #C7C3BC;
 }
 
-.top-news-list .news3 {
+.top-news .top-news-list .news3 {
     padding-left: 13px;
 }
 
-.top-news-list h2 {
+.top-news .top-news-list h2 {
     line-height: 32px;
     font-size: 24px;
     padding-top: 24px;
@@ -222,27 +222,27 @@ ul {
 }
 
 /* right-container */
-.right-container {
+.top-news.right-container {
     flex: 300;
     padding-left: 16px;
     border-left: 1px solid #C7C3BC;
     margin-left: 16px;
 }
 
-.right-container h2 {
+.top-news .right-container h2 {
     font-size: 19px;
     line-height: 26px;
     margin-top: 6px;
 }
 
-.right-container .news1 {
+.top-news .right-container .news1 {
     margin-top: 32px;
     border-top: 1px solid #C7C3BC;
     padding: 22px 0 16px 0;
     border-bottom: 1px solid #C7C3BC;
 }
 
-.right-container .news2 {
+.top-news .right-container .news2 {
     margin-top: 25px;
 }
 
@@ -570,10 +570,11 @@ ul {
     height: 15px;
 }
 
-.edugraph .nav-list a{
-    text-transform : none;
-    color : black;
+.edugraph .nav-list a {
+    text-transform: none;
+    color: black;
 }
+
 .edugraph .nav-list .last,
 .kolkata .nav-list .last {
     border: 0;
@@ -843,6 +844,11 @@ ul {
     margin-top: 3px;
 }
 
+.sports {
+    border-bottom: 1px solid #d8d4cc;
+    padding-bottom: 3px;
+}
+
 .india img,
 .business img,
 .world img,
@@ -857,6 +863,7 @@ ul {
 .world .title,
 .sports .title,
 .edugraph .title,
+.entertainment .title,
 .bengal .title {
     font-size: 36px;
     font-family: Roboto;
@@ -945,6 +952,11 @@ ul {
     max-height: 374px;
 }
 
+.sports .bottom-list {
+    border-bottom: 4px solid #d8d4cc;
+}
+
+
 .india .bottom-list li,
 .business .bottom-list li,
 .world .bottom-list li,
@@ -957,6 +969,10 @@ ul {
     padding: 0 16px 10px 12px;
     vertical-align: top;
     height: 370px;
+}
+
+.sports .bottom-list li {
+    margin-bottom: 25px;
 }
 
 .world .bottom-list li {
@@ -991,4 +1007,74 @@ ul {
     margin: 16px 24px 24px;
     font-size: 20px;
     line-height: 27px;
+}
+
+/* entertainment*/
+.entertainment {
+    background-color: #910000;
+    margin-top: 80px;
+    border-top: 1px solid #d8d4cc;
+}
+
+.entertainment img {
+    width: 100%;
+}
+
+.entertainment .container {
+    width: 67.5%;
+    margin: 0 auto;
+}
+
+.entertainment .title {
+    color: white;
+    margin-top: 30px;
+}
+
+.entertainment .top-movie {
+    display: flex;
+    border-bottom : 1px solid black;
+    margin-bottom :24px;
+    padding-bottom : 24px;
+}
+
+.entertainment .top-movie figure {
+    width: 695px;
+    flex-shrink: 0;
+}
+
+.entertainment .top-movie .contentbox {
+    flex: 1;
+    padding: 80px 72px;
+    background-color : #6e0000;
+    text-align: center;
+    color: white;
+    flex-shrink :0;
+    height : 304px;
+}
+
+.entertainment .top-movie h2 {
+    font-size: 35px;
+    line-height: 46px;
+}
+
+.entertainment .top-movie p {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: Roboto;
+    margin-top: 48px;
+}
+
+.entertainment .bottom-container{
+    display: flex;
+    vertical-align: top;
+}
+
+.entertainment .bottom-container .topick-list{
+    width: 786px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.entertainment .bottom-container .right-container{
+    flex: 1;
 }
