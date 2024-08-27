@@ -20,44 +20,129 @@ ul {
     list-style: none;
 }
 
+/*logo*/
 .logo {
     display: block;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     padding-top: 40px;
 }
+
+/*navbar*/
 
 .navbar {
     border-top: 1px;
     border-bottom: 1px;
     border-style: solid;
     border-color: #aaa;
-    margin-top: 23px;
+    margin-top: 24px;
     height: 44px;
+}
+
+.navbar ul{
+    margin-left: 35px;
 }
 
 .navbar-container {
     width: 67.5%;
-    margin: 9px auto;
-    display: flex;
+    margin: 0 auto;
+    display: inline-flex;
     justify-content: space-between;
+    height: 100%;
+}
+
+.navbar-container li {
+    display: inline-flex;
+    padding-right: 30px;
+    height: 100%;
+    align-items: center;
+}
+.navbar .navbar-container .navbar-item{
+    display: flex;
     align-items: center;
 }
 
-/* .navbar-container ul {
-    list-style: none;
-} */
-
-.navbar-container li {
-    display: inline-block;
-    padding-right: 30px;
-}
-
-.page-name {
+.navbar .page-name {
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
+    position: relative;
 }
 
+.navbar .navbar-item .no-dropdown:hover .underline::after,
+.navbar .navbar-item .current-page::after
+{
+    content: "";
+    width: 100%;
+    height: 4px;
+    display: block;
+    background-color: #000;
+    position: absolute;
+    top: 25px;
+}
+
+
+.navbar .navbar-item .dropdown .page-name::after {
+    position: relative;
+    right: -8px;
+    top: -4px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    transform: rotate(-45deg);
+    transition: 0.3s;
+    content: "";
+    margin-right: 15px;
+}
+
+/* navbar - dropdown*/
+.navbar .dropdown-content {
+    display: none;
+    background-color: white;
+    width: 200px;
+    padding: 10px 16px 10px 20px;
+    position: absolute;
+    top: 196px;
+    box-shadow: 1px 6px 12px rgba(0, 0, 0, .2392156863);
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.navbar .dropdown-content a {
+    padding: 16px 0 8px;
+    border-bottom: 1px solid #C7C3BC;
+    color: black;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 500;
+}
+
+.navbar .dropdown-content a:hover::before{
+    content: "";
+    width: 4px;
+    height: 100%;
+    display: block;
+    background-color: #000;
+    position: absolute;
+    top: -0.5px;
+    left: -20px;
+}
+
+.navbar .dropdown-content .last{
+    border: none;
+    padding-bottom: 4px;
+}
+
+.navbar .dropdown:hover .dropdown-content{
+    display: block;
+}
+.navbar .dropdown:hover  .dropdown-arrow::after{
+    transform: rotate(135deg);
+    top:-1px;
+}
 
 /*top-news*/
 .top-news {
@@ -146,9 +231,12 @@ ul {
     display: block;
 }
 
+.top-news .main-news:hover h1{
+    color: #b70000;
+}
 
-/* topnews leadstory */
-.top-news .leadstory {
+/* leadstory */
+.leadstory {
     flex: 530;
     padding: 8px;
     border: 1px solid black;
@@ -221,28 +309,28 @@ ul {
     padding-right: 24px;
 }
 
-/* right-container */
-.top-news.right-container {
+/* right-article-links */
+.right-article-links {
     flex: 300;
     padding-left: 16px;
     border-left: 1px solid #C7C3BC;
     margin-left: 16px;
 }
 
-.top-news .right-container h2 {
+.right-article-links h2 {
     font-size: 19px;
     line-height: 26px;
     margin-top: 6px;
 }
 
-.top-news .right-container .news1 {
+.right-article-links .news1 {
     margin-top: 32px;
     border-top: 1px solid #C7C3BC;
     padding: 22px 0 16px 0;
     border-bottom: 1px solid #C7C3BC;
 }
 
-.top-news .right-container .news2 {
+.right-article-links .news2 {
     margin-top: 25px;
 }
 
@@ -266,6 +354,7 @@ ul {
     font-size: 36px;
     font-family: Roboto;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .videos img {
@@ -341,9 +430,14 @@ ul {
     min-height: 688px;
     display: inline-block;
     vertical-align: top;
-    margin-right: 25px;
+    margin-right: 24px;
     box-sizing: border-box;
 }
+
+.shorts .list-item:hover .shorts-image{
+    filter:opacity(50%);
+    transition: 1s;
+} 
 
 .shorts .list-item-last {
     margin: 0;
@@ -419,21 +513,21 @@ ul {
     width: 100%;
 }
 
-.top-picks .left-container {
+.top-picks .left-article-links {
     flex: 786;
     background-color: #f8f4e7;
     padding: 24px;
     box-sizing: border-box;
 }
 
-.top-picks .left-container .title {
+.top-picks .left-article-links .title {
     font-size: 36px;
     font-family: Roboto;
     text-align: center;
     text-transform: uppercase;
 }
 
-.top-picks .left-container span {
+.top-picks .left-article-links span {
     font-size: 14px;
     color: grey;
     display: block;
@@ -442,7 +536,7 @@ ul {
     padding-top: 8px;
 }
 
-.top-picks .left-container .topick-list {
+.top-picks .left-article-links .topick-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -472,8 +566,8 @@ ul {
     padding-bottom: 0;
 }
 
-.top-picks .left-container .left-top::after,
-.top-picks .left-container .right-top::after {
+.top-picks .left-article-links .left-top::after,
+.top-picks .left-article-links .right-top::after {
     content: "";
     width: 107%;
     height: 1px;
@@ -483,43 +577,43 @@ ul {
     display: inline-block;
 }
 
-.top-picks .left-container .right-top::after {
+.top-picks .left-article-links .right-top::after {
     right: 25px;
 }
 
 /* top-picks right containter */
-.top-picks .right-container {
+.top-picks .right-article-links {
     flex: 509;
 }
 
-.top-picks .right-container .title {
+.top-picks .right-article-links .title {
     font-size: 36px;
     font-family: Roboto;
     text-align: center;
     text-transform: uppercase;
 }
 
-.top-picks .right-container .trending-list {
+.top-picks .right-article-links .trending-list {
     list-style: none;
 }
 
-.top-picks .right-container li {
+.top-picks .right-article-links li {
     padding: 32px 0 16px;
     border-bottom: 1px solid #C7C3BC;
     min-height: 85px;
     box-sizing: border-box;
 }
 
-.top-picks .right-container a {
+.top-picks .right-article-links a {
     display: flex;
 }
 
-.top-picks .right-container figure {
+.top-picks .right-article-links figure {
     flex: 128;
     margin-right: 16px;
 }
 
-.top-picks .right-container h3 {
+.top-picks .right-article-links h3 {
     flex: 332;
 }
 
@@ -532,6 +626,7 @@ ul {
     min-height: 970px;
     border-top: 1px solid #d8d4cc;
     padding-top: 96px;
+    padding-bottom: 24px;
 }
 
 .kolkata img {
@@ -569,6 +664,11 @@ ul {
     font-family: Roboto;
     height: 15px;
 }
+
+.kolkata .nav-list a:hover{
+    color: black;
+}
+
 
 .edugraph .nav-list a {
     text-transform: none;
@@ -685,6 +785,8 @@ ul {
 
 .kolkata .right .list p {
     padding-top: 8px;
+    font-weight: bold;
+    line-height: 22px;
 }
 
 .kolkata .right .list img {
@@ -693,6 +795,7 @@ ul {
     bottom: 2px;
     padding-right: 16px;
 }
+
 
 /* opinion section */
 
@@ -770,6 +873,10 @@ ul {
     padding: 0 16px 0 12px;
 }
 
+.opinion li:hover p{
+    color:#b70000;
+}
+
 .opinion .list .first {
     padding-left: 0;
 }
@@ -820,24 +927,29 @@ ul {
     left: -23px;
 }
 
-/* india , business, world, sports, bengal, edugraph*/
+/* india , business, world, sports, bengal, edugraph, inpicture */
 .india,
 .business,
 .world,
 .sports,
 .edugraph,
+.inpicture .container,
 .bengal {
     width: 67.5%;
     margin: 0 auto;
     padding-top: 48px;
     padding-bottom: 24px;
     border-bottom: 4px solid #d8d4cc;
-    /* margin-bottom: 100px; */
+}
+
+.sports,
+.edugraph {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .business,
 .world,
-.edugraph,
 .sports,
 .bengal {
     border-top: 1px solid #d8d4cc;
@@ -854,8 +966,10 @@ ul {
 .world img,
 .sports img,
 .edugraph img,
+.inpicture img,
 .bengal img {
     width: 100%;
+    height: 100%;
 }
 
 .india .title,
@@ -863,7 +977,7 @@ ul {
 .world .title,
 .sports .title,
 .edugraph .title,
-.entertainment .title,
+.inpicture .title,
 .bengal .title {
     font-size: 36px;
     font-family: Roboto;
@@ -890,6 +1004,7 @@ ul {
 .business .topdiv,
 .sports .topdiv,
 .edugraph .topdiv,
+.inpicture .topdiv,
 .bengal .topdiv {
     display: flex;
     justify-content: space-between;
@@ -903,6 +1018,7 @@ ul {
 .business .rightbox,
 .sports .rightbox,
 .edugraph .rightbox,
+.inpicture .rightbox,
 .bengal .rightbox {
     width: 299px;
     border-left: 1px solid #C7C3BC;
@@ -914,6 +1030,7 @@ ul {
 .business .topdiv .topnews h2,
 .sports .topdiv .topnews h2,
 .edugraph .topdiv .topnews h2,
+.inpicture .topdiv .topnews h2,
 .bengal .topdiv .topnews h2 {
     margin: 80px 32px 0;
     font-size: 32px;
@@ -925,6 +1042,7 @@ ul {
 .business .topdiv .rightbox h2,
 .sports .topdiv .rightbox h2,
 .edugraph .topdiv .rightbox h2,
+.inpicture .topdiv .rightbox h2,
 .bengal .topdiv .rightbox h2 {
     font-size: 24px;
     line-height: 32px;
@@ -936,15 +1054,18 @@ ul {
 .business .topdiv .topnews figure,
 .sports .topdiv .topnews figure,
 .edugraph .topdiv .topnews figure,
+.inpicture .topdiv .topnews figure,
 .bengal .topdiv .topnews figure {
     max-width: 560px;
     flex-shrink: 0;
+    height: 374px;
 }
 
 .india .topdiv .topnews,
 .business .topdiv .topnews,
 .sports .topdiv .topnews,
 .edugraph .topdiv .topnews,
+.inpicture .topdiv .topnews,
 .bengal .topdiv .topnews {
     background-color: #f8f4e7;
     display: flex;
@@ -957,12 +1078,13 @@ ul {
 }
 
 
-.india .bottom-list li,
-.business .bottom-list li,
-.world .bottom-list li,
-.sports .bottom-list li,
-.edugraph .bottom-list li,
-.bengal .bottom-list li {
+.india .subarticle-list li,
+.business .subarticle-list li,
+.world .subarticle-list li,
+.sports .subarticle-list li,
+.edugraph .subarticle-list li,
+.inpicture .subarticle-list li,
+.bengal .subarticle-list li {
     display: inline-block;
     width: 298.8px;
     border-right: 1px solid #C7C3BC;
@@ -975,44 +1097,46 @@ ul {
     margin-bottom: 25px;
 }
 
-.world .bottom-list li {
+.world .subarticle-list li {
     height: 345px;
 }
 
-.india .bottom-list .first,
-.business .bottom-list .first,
-.world .bottom-list .first,
-.sports .bottom-list .first,
-.edugraph .bottom-list .first,
-.bengal .bottom-list .first {
+.india .subarticle-list .first,
+.business .subarticle-list .first,
+.world .subarticle-list .first,
+.sports .subarticle-list .first,
+.edugraph .subarticle-list .first,
+.inpicture .subarticle-list .first,
+.bengal .subarticle-list .first {
     padding-left: 0;
 }
 
-.india .bottom-list .last,
-.business .bottom-list .last,
-.world .bottom-list .last,
-.sports .bottom-list .last,
-.edugraph .bottom-list .last,
-.bengal .bottom-list .last {
+.india .subarticle-list .last,
+.business .subarticle-list .last,
+.world .subarticle-list .last,
+.sports .subarticle-list .last,
+.edugraph .subarticle-list .last,
+.inpicture .subarticle-list .last,
+.bengal .subarticle-list .last {
     border: 0;
     padding-right: 0;
 }
 
-.india .bottom-list h2,
-.business .bottom-list h2,
-.world .bottom-list h2,
-.sports .bottom-list h2,
-.edugraph .bottom-list h2,
-.bengal .bottom-list h2 {
+.india .subarticle-list h2,
+.business .subarticle-list h2,
+.world .subarticle-list h2,
+.sports .subarticle-list h2,
+.edugraph .subarticle-list h2,
+.inpicture .subarticle-list h2,
+.bengal .subarticle-list h2 {
     margin: 16px 24px 24px;
     font-size: 20px;
     line-height: 27px;
 }
 
-<<<<<<< HEAD
-/* entertainment*/
-=======
->>>>>>> 82e058b (add css for entertainment section)
+
+/* entertainemnt*/
+
 .entertainment {
     background-color: #910000;
     margin-top: 80px;
@@ -1026,24 +1150,23 @@ ul {
 .entertainment .container {
     width: 67.5%;
     margin: 0 auto;
+    padding: 32px;
 }
 
 .entertainment .title {
     color: white;
-    margin-top: 30px;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Roboto;
+    padding-bottom: 30px;
 }
 
 .entertainment .top-movie {
     display: flex;
-<<<<<<< HEAD
-    border-bottom : 1px solid black;
-    margin-bottom :24px;
-    padding-bottom : 24px;
-=======
     border-bottom: 1px solid #4e0000;
     margin-bottom: 24px;
     padding-bottom: 24px;
->>>>>>> 82e058b (add css for entertainment section)
 }
 
 .entertainment .top-movie figure {
@@ -1054,19 +1177,11 @@ ul {
 .entertainment .top-movie .contentbox {
     flex: 1;
     padding: 80px 72px;
-<<<<<<< HEAD
-    background-color : #6e0000;
-    text-align: center;
-    color: white;
-    flex-shrink :0;
-    height : 304px;
-=======
     background-color: #6e0000;
     text-align: center;
     color: white;
     flex-shrink: 0;
     height: 304px;
->>>>>>> 82e058b (add css for entertainment section)
 }
 
 .entertainment .top-movie h2 {
@@ -1081,22 +1196,6 @@ ul {
     margin-top: 48px;
 }
 
-<<<<<<< HEAD
-.entertainment .bottom-container{
-    display: flex;
-    vertical-align: top;
-}
-
-.entertainment .bottom-container .topick-list{
-    width: 786px;
-    flex-shrink: 0;
-    box-sizing: border-box;
-}
-
-.entertainment .bottom-container .right-container{
-    flex: 1;
-}
-=======
 .entertainment .bottom-container {
     display: flex;
     vertical-align: top;
@@ -1112,17 +1211,24 @@ ul {
 
 .entertainment .bottom-container .topick-list li {
     max-width: 324px;
-    max-height: 380px;
+    height: 390px;
     flex-shrink: 0;
 }
 
 .entertainment .bottom-container .left {
     border-right: 1px solid #4e0000;
     padding-right: 24px;
+    margin-top: 80px;
 }
 
 .entertainment .bottom-container .right {
     padding-left: 24px;
+    margin-top: 80px;
+}
+
+.entertainment .bottom-container .right-top,
+.entertainment .bottom-container .left-top {
+    margin-top: 0;
 }
 
 .entertainment .topick-list h2 {
@@ -1139,7 +1245,7 @@ ul {
     height: 1px;
     background-color: #4e0000;
     position: relative;
-    bottom: -40px;
+    bottom: -56px;
     display: inline-block;
 }
 
@@ -1147,20 +1253,214 @@ ul {
     right: 28px;
 }
 
-.entertainment .bottom-container .right-container {
+.entertainment .bottom-container .right-article-links {
     width: 485px;
     flex-shrink: 0;
     border-left: 1px solid #4e0000;
     padding-left: 24px;
+    margin-left: 24px;
 }
 
-.entertainment .bottom-container .right-container li {
+.entertainment .bottom-container .right-article-links li {
     padding: 32px 0 16px;
     border-bottom: 1px solid #4e0000;
     min-height: 180px;
 }
 
-.entertainment .bottom-container .first{
+.entertainment .bottom-container .right-article-links .first {
     padding-top: 0;
 }
->>>>>>> 82e058b (add css for entertainment section)
+
+.entertainment .bottom-container .right-article-links .last {
+    padding-bottom: 0;
+    border: none;
+}
+
+.entertainment .bottom-container .right-article-links a {
+    display: flex;
+}
+
+.entertainment .bottom-container .right-article-links img {
+    width: 270px;
+}
+
+.entertainment .bottom-container .right-article-links h3 {
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+    padding-left: 16px;
+}
+
+/*inpicture*/
+
+.inpicture {
+    background-color: #e4dece;
+    margin-top: 108px;
+    padding: 24px 0 16px;
+}
+
+.inpicture i {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    bottom: 55px;
+}
+
+.inpicture .topnews i {
+    width: 72px;
+    height: 72px;
+    bottom: 78px;
+}
+
+.inpicture .container {
+    border: none;
+    padding-top: 0;
+}
+
+.inpicture .fig {
+    height: 200px;
+}
+
+.inpicture .topdiv,
+.inpicture .topdiv .rightbox,
+.inpicture .subarticle-list li {
+    border-color: #a49e91;
+}
+
+
+.border-div {
+    margin: 0 auto;
+    margin-top: 20px;
+    content: "";
+    height: 3px;
+    width: 67.5%;
+    border-top: 4px solid #d8d4cc;
+    border-bottom: 1px solid #d8d4cc;
+    border-left:none;
+    border-right:none;
+}
+
+/*footer*/
+
+footer {
+    margin-top: 53px;
+    background-color: #f8f4e7;
+    font-family: Roboto;
+    padding-top: 40px;
+}
+
+footer h2 {
+    font-size: 16px;
+    color: #444;
+}
+
+.footer-list-container {
+    width: 67.5%;
+    margin: 0 auto;
+}
+
+.footer-list-container .links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+
+.footer-list-container a {
+    font-size: 16px;
+    color: #444;
+    display: block;
+    padding-top: 16px;
+}
+
+.footer-list-container a:hover{
+    color: #b70000;
+}
+
+/*footer - download-box*/
+.download-box {
+    border-top: 1px solid #d4d1ca;
+    border-bottom: 1px solid #d4d1ca;
+    margin-top: 40px;
+    padding: 40px 0;
+}
+
+.download-box .container {
+    width: 67.5%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.download-box h2 {
+    width: 280px;
+}
+
+.download-box .container img {
+    margin-left: 20px;
+    vertical-align: middle;
+    /* align-items: center; */
+    height: 40px;
+}
+
+/*footer - follow-us*/
+.follow-us {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d4d1ca;
+}
+
+.follow-us .container {
+    width: 67.5%;
+    margin: 0 auto;
+    padding: 0 100px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.follow-us .container .social-platforms {
+    width: 332px;
+    display: flex;
+    align-items: center;
+    padding-right: 120px;
+}
+
+.follow-us .container a {
+    margin-left: 32px;
+}
+
+.follow-us .container .website-links a {
+    margin-left: 25px;
+}
+
+.follow-us .container .social-platforms .twitter-icon {
+    margin-left: 45px;
+}
+
+.follow-us .container .website-links {
+    display: flex;
+    align-items: center;
+}
+
+/* footer - copyright*/
+
+.copyright {
+    padding: 40px 0;
+}
+
+.copyright .container {
+    width: 67.5%;
+    margin: 0 auto;
+    padding: 0 100px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* for hover */
+.color-red:hover{
+    color:#b70000 !important;
+}
+
