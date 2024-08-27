@@ -1009,7 +1009,10 @@ ul {
     line-height: 27px;
 }
 
+<<<<<<< HEAD
 /* entertainment*/
+=======
+>>>>>>> 82e058b (add css for entertainment section)
 .entertainment {
     background-color: #910000;
     margin-top: 80px;
@@ -1032,9 +1035,15 @@ ul {
 
 .entertainment .top-movie {
     display: flex;
+<<<<<<< HEAD
     border-bottom : 1px solid black;
     margin-bottom :24px;
     padding-bottom : 24px;
+=======
+    border-bottom: 1px solid #4e0000;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+>>>>>>> 82e058b (add css for entertainment section)
 }
 
 .entertainment .top-movie figure {
@@ -1045,11 +1054,19 @@ ul {
 .entertainment .top-movie .contentbox {
     flex: 1;
     padding: 80px 72px;
+<<<<<<< HEAD
     background-color : #6e0000;
     text-align: center;
     color: white;
     flex-shrink :0;
     height : 304px;
+=======
+    background-color: #6e0000;
+    text-align: center;
+    color: white;
+    flex-shrink: 0;
+    height: 304px;
+>>>>>>> 82e058b (add css for entertainment section)
 }
 
 .entertainment .top-movie h2 {
@@ -1064,6 +1081,7 @@ ul {
     margin-top: 48px;
 }
 
+<<<<<<< HEAD
 .entertainment .bottom-container{
     display: flex;
     vertical-align: top;
@@ -1078,3 +1096,71 @@ ul {
 .entertainment .bottom-container .right-container{
     flex: 1;
 }
+=======
+.entertainment .bottom-container {
+    display: flex;
+    vertical-align: top;
+    justify-content: space-between;
+}
+
+.entertainment .bottom-container .topick-list {
+    width: 698px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.entertainment .bottom-container .topick-list li {
+    max-width: 324px;
+    max-height: 380px;
+    flex-shrink: 0;
+}
+
+.entertainment .bottom-container .left {
+    border-right: 1px solid #4e0000;
+    padding-right: 24px;
+}
+
+.entertainment .bottom-container .right {
+    padding-left: 24px;
+}
+
+.entertainment .topick-list h2 {
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+    margin: 16px 16px 0;
+}
+
+.entertainment .topick-list .left-top::after,
+.entertainment .topick-list .right-top::after {
+    content: "";
+    width: 107%;
+    height: 1px;
+    background-color: #4e0000;
+    position: relative;
+    bottom: -40px;
+    display: inline-block;
+}
+
+.entertainment .topick-list .right-top::after {
+    right: 28px;
+}
+
+.entertainment .bottom-container .right-container {
+    width: 485px;
+    flex-shrink: 0;
+    border-left: 1px solid #4e0000;
+    padding-left: 24px;
+}
+
+.entertainment .bottom-container .right-container li {
+    padding: 32px 0 16px;
+    border-bottom: 1px solid #4e0000;
+    min-height: 180px;
+}
+
+.entertainment .bottom-container .first{
+    padding-top: 0;
+}
+>>>>>>> 82e058b (add css for entertainment section)
