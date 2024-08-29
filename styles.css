@@ -200,6 +200,9 @@ ul {
     margin-top: 16px;
     margin-bottom: 24px;
 }
+.top-news .left-box p:hover .special-h-hover{
+    color: #b70000;
+}
 
 .top-news .left-box li {
     padding-top: 48px;
@@ -1361,6 +1364,10 @@ footer h2 {
     padding-top: 16px;
 }
 
+.footer-list-container a:hover{
+    color: #b70000;
+}
+
 /*download-box*/
 .download-box {
     border-top: 1px solid #d4d1ca;
@@ -1437,4 +1444,12 @@ footer h2 {
     padding: 0 100px;
     box-sizing: border-box;
     font-size: 14px;
+}
+
+.color-red:hover{
+    color:#b70000 !important;
+}
+
+.no-change:hover{
+    color:initial;
 }
