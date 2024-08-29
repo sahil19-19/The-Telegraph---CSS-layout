@@ -948,6 +948,12 @@ ul {
     padding-bottom: 0;
 }
 
+.sports,
+.edugraph {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
 .business,
 .world,
 .sports,
@@ -1258,13 +1264,11 @@ ul {
 .entertainment .bottom-container .right-article-links .first {
     padding-top: 0;
 }
-
-.entertainment .bottom-container .right-article-links .last {
+.entertainment .bottom-container .right-container .last {
     padding-bottom: 0;
     border: none;
 }
-
-.entertainment .bottom-container .right-article-links a {
+.entertainment .bottom-container .right-container a {
     display: flex;
 }
 
@@ -1279,7 +1283,7 @@ ul {
     padding-left: 16px;
 }
 
-.inpicture{
+.inpicture {
     background-color: #e4dece;
     margin-top: 108px;
     padding: 24px 0 16px;
@@ -1291,4 +1295,19 @@ ul {
     display: inline-block;
     position: relative;
     bottom: 55px;
+}
+
+.inpicture .topnews i{
+    width: 72px;
+    height: 72px;
+    bottom: 78px;
+}
+
+.inpicture .container{
+    border:none;
+    padding-top: 0;
+}
+
+.inpicture .fig{
+    height: 200px;
 }
