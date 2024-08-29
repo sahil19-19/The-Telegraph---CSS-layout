@@ -200,9 +200,9 @@ ul {
     margin-top: 16px;
     margin-bottom: 24px;
 }
-.top-news .left-box p:hover .special-h-hover{
+/* .top-news .left-box p:hover ~ .hello{
     color: #b70000;
-}
+} */
 
 .top-news .left-box li {
     padding-top: 48px;
