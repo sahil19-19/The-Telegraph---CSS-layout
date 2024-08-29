@@ -65,7 +65,6 @@ ul {
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
-    position: relative;
 }
 
 .navbar .navbar-item .no-dropdown:hover .underline::after,
@@ -1310,4 +1309,132 @@ ul {
 
 .inpicture .fig{
     height: 200px;
+}
+
+.inpicture .topdiv,
+.inpicture .topdiv .rightbox,
+.inpicture .bottom-list li {
+    border-color: #a49e91;
+}
+
+
+.border-div {
+    margin: 0 auto;
+    margin-top: 20px;
+    content: "";
+    height: 3px;
+    width: 67.5%;
+    border-top: 4px solid #d8d4cc;
+    border-bottom: 1px solid #d8d4cc;
+}
+
+/*footer*/
+
+footer {
+    margin-top: 53px;
+    background-color: #f8f4e7;
+    font-family: Roboto;
+    padding-top: 40px;
+}
+
+footer h2 {
+    font-size: 16px;
+    color: #444;
+}
+
+.footer-list-container {
+    width: 67.5%;
+    margin: 0 auto;
+}
+
+.footer-list-container .links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+
+.footer-list-container a {
+    font-size: 16px;
+    color: #444;
+    display: block;
+    padding-top: 16px;
+}
+
+/*download-box*/
+.download-box {
+    border-top: 1px solid #d4d1ca;
+    border-bottom: 1px solid #d4d1ca;
+    margin-top: 40px;
+    padding: 40px 0;
+}
+
+.download-box .container {
+    width: 67.5%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.download-box h2 {
+    width: 280px;
+}
+
+.download-box .container img {
+    margin-left: 20px;
+    vertical-align: middle;
+    /* align-items: center; */
+    height: 40px;
+}
+
+.follow-us {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d4d1ca;
+}
+
+.follow-us .container {
+    width: 67.5%;
+    margin: 0 auto;
+    padding: 0 100px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.follow-us .container .left-div {
+    width: 332px;
+    display: flex;
+    align-items: center;
+    padding-right: 120px;
+}
+
+.follow-us .container a {
+    margin-left: 32px;
+}
+.follow-us .container .right-div a{
+    margin-left: 25px;
+}
+.follow-us .container .left-div .twitter-icon{
+    margin-left: 45px;
+}
+
+.follow-us .container .right-div {
+    display: flex;
+    align-items: center;
+}
+
+/*copyright*/
+
+.copyright{
+    padding: 40px 0;
+}
+
+.copyright .container{
+    width: 67.5%;
+    margin: 0 auto;
+    padding: 0 100px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
