@@ -1328,6 +1328,8 @@ ul {
     width: 67.5%;
     border-top: 4px solid #d8d4cc;
     border-bottom: 1px solid #d8d4cc;
+    border-left:none;
+    border-right:none;
 }
 
 /*footer*/
