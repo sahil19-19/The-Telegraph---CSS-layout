@@ -154,7 +154,7 @@ ul {
     border-bottom: 4px solid #d8d4cc;
 }
 
-.top-news .left-container {
+.left-container {
     flex: 963;
 }
 
@@ -1083,6 +1083,7 @@ ul {
 .world .bottom-list li,
 .sports .bottom-list li,
 .edugraph .bottom-list li,
+.inpicture .bottom-list li,
 .bengal .bottom-list li {
     display: inline-block;
     width: 298.8px;
@@ -1092,11 +1093,7 @@ ul {
     height: 370px;
 }
 
-.sports .bottom-list li {
-    margin-bottom: 25px;
-}
-
-.world .subarticle-list li {
+.world .bottom-list li {
     height: 345px;
 }
 
@@ -1105,6 +1102,7 @@ ul {
 .world .bottom-list .first,
 .sports .bottom-list .first,
 .edugraph .bottom-list .first,
+.inpicture .bottom-list .first,
 .bengal .bottom-list .first {
     padding-left: 0;
 }
@@ -1114,6 +1112,7 @@ ul {
 .world .bottom-list .last,
 .sports .bottom-list .last,
 .edugraph .bottom-list .last,
+.inpicture .bottom-list .last,
 .bengal .bottom-list .last {
     border: 0;
     padding-right: 0;
@@ -1124,6 +1123,7 @@ ul {
 .world .bottom-list h2,
 .sports .bottom-list h2,
 .edugraph .bottom-list h2,
+.inpicture .bottom-list h2,
 .bengal .bottom-list h2 {
     margin: 16px 24px 24px;
     font-size: 20px;
@@ -1265,10 +1265,12 @@ ul {
 .entertainment .bottom-container .right-article-links .first {
     padding-top: 0;
 }
+
 .entertainment .bottom-container .right-container .last {
     padding-bottom: 0;
     border: none;
 }
+
 .entertainment .bottom-container .right-container a {
     display: flex;
 }
@@ -1315,7 +1317,7 @@ ul {
 
 .inpicture .topdiv,
 .inpicture .topdiv .rightbox,
-.inpicture .bottom-list li {
+.inpicture .subarticle-list li {
     border-color: #a49e91;
 }
 
@@ -1412,7 +1414,7 @@ footer h2 {
     display: flex;
 }
 
-.follow-us .container .left-div {
+.follow-us .container .social-platforms {
     width: 332px;
     display: flex;
     align-items: center;
@@ -1422,14 +1424,16 @@ footer h2 {
 .follow-us .container a {
     margin-left: 32px;
 }
-.follow-us .container .right-div a{
+
+.follow-us .container .right-div a {
     margin-left: 25px;
 }
-.follow-us .container .left-div .twitter-icon{
+
+.follow-us .container .left-div .twitter-icon {
     margin-left: 45px;
 }
 
-.follow-us .container .right-div {
+.follow-us .container .website-links {
     display: flex;
     align-items: center;
 }
