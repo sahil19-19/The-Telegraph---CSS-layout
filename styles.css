@@ -65,6 +65,7 @@ ul {
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
+    position: relative;
 }
 
 .navbar .navbar-item .no-dropdown:hover .underline::after,
@@ -154,7 +155,7 @@ ul {
     border-bottom: 4px solid #d8d4cc;
 }
 
-.left-container {
+.left-article-links {
     flex: 963;
 }
 
@@ -172,27 +173,27 @@ ul {
 }
 
 /* top-news, innerbox*/
-.top-bews .inner-box {
+.inner-box {
     display: flex;
     padding-bottom: 24px;
     border-bottom: 1px solid #C7C3BC;
 }
 
-.top-news .left-box {
+.left-box {
     flex: 384;
     padding-right: 16px;
     margin-right: 16px;
     border-right: 1px solid #C7C3BC;
 }
 
-.top-news .left-box h1 {
+.left-box h1 {
     font-weight: 700;
     font-size: 38px;
     line-height: 52px;
     font-family: serif;
 }
 
-.top-news .left-box p {
+.left-box p {
     font-size: 16px;
     line-height: 24px;
     font-family: Roboto;
@@ -201,7 +202,7 @@ ul {
     margin-bottom: 24px;
 }
 
-.top-news .left-box li {
+.left-box li {
     padding-top: 48px;
     padding-left: 16px;
     padding-bottom: 28px;
@@ -209,7 +210,7 @@ ul {
     position: relative;
 }
 
-.top-news .left-box li::before {
+.left-box li::before {
     content: "";
     position: absolute;
     left: 0;
@@ -220,7 +221,7 @@ ul {
     /* display: inline-block; */
 }
 
-.top-news .left-box .top {
+.left-box .top {
     border-bottom: 1px solid #C7C3BC;
 }
 
@@ -241,24 +242,24 @@ ul {
     border: 1px solid black;
 }
 
-.top-news .leadstory a {
+.leadstory a {
     background: #f8f4e7;
     display: block;
     height: 100%;
 }
 
-.top-news .content-box {
+.content-box {
     position: relative;
     padding: 80px 96px;
 }
 
-.top-news .content-box h2 {
+.content-box h2 {
     font-size: 32px;
     line-height: 44px;
     text-align: center;
 }
 
-.top-news .leadstory .left-quote {
+.leadstory .left-quote {
     position: absolute;
     left: 32px;
     top: 50%;
@@ -266,7 +267,7 @@ ul {
     width: initial;
 }
 
-.top-news .leadstory .right-quote {
+.leadstory .right-quote {
     position: absolute;
     right: 32px;
     top: 50%;
@@ -275,32 +276,32 @@ ul {
 }
 
 /* top news list */
-.top-news .top-news-list {
+.top-news-list {
     margin-top: 24px;
 }
 
-.top-news .top-news-list li {
+.top-news-list li {
     display: inline-block;
     max-width: 300px;
     min-height: 430px;
     vertical-align: top;
 }
 
-.top-news .top-news-list .news1 {
+.top-news-list .news1 {
     padding-right: 13px;
     border-right: 1px solid #C7C3BC;
 }
 
-.top-news .top-news-list .news2 {
+.top-news-list .news2 {
     padding: 0 13px 0 13px;
     border-right: 1px solid #C7C3BC;
 }
 
-.top-news .top-news-list .news3 {
+.top-news-list .news3 {
     padding-left: 13px;
 }
 
-.top-news .top-news-list h2 {
+.top-news-list h2 {
     line-height: 32px;
     font-size: 24px;
     padding-top: 24px;
@@ -947,23 +948,12 @@ ul {
     padding-bottom: 0;
 }
 
-.sports,
-.edugraph {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
 .business,
 .world,
 .sports,
 .bengal {
     border-top: 1px solid #d8d4cc;
     margin-top: 3px;
-}
-
-.sports {
-    border-bottom: 1px solid #d8d4cc;
-    padding-bottom: 3px;
 }
 
 .india img,
@@ -1078,13 +1068,13 @@ ul {
     max-height: 374px;
 }
 
-.india .bottom-list li,
-.business .bottom-list li,
-.world .bottom-list li,
-.sports .bottom-list li,
-.edugraph .bottom-list li,
-.inpicture .bottom-list li,
-.bengal .bottom-list li {
+.india .subarticle-list li,
+.business .subarticle-list li,
+.world .subarticle-list li,
+.sports .subarticle-list li,
+.edugraph .subarticle-list li,
+.inpicture .subarticle-list li,
+.bengal .subarticle-list li {
     display: inline-block;
     width: 298.8px;
     border-right: 1px solid #C7C3BC;
@@ -1093,42 +1083,43 @@ ul {
     height: 370px;
 }
 
-.world .bottom-list li {
+.world .subarticle-list li {
     height: 345px;
 }
 
-.india .bottom-list .first,
-.business .bottom-list .first,
-.world .bottom-list .first,
-.sports .bottom-list .first,
-.edugraph .bottom-list .first,
-.inpicture .bottom-list .first,
-.bengal .bottom-list .first {
+.india .subarticle-list .first,
+.business .subarticle-list .first,
+.world .subarticle-list .first,
+.sports .subarticle-list .first,
+.edugraph .subarticle-list .first,
+.inpicture .subarticle-list .first,
+.bengal .subarticle-list .first {
     padding-left: 0;
 }
 
-.india .bottom-list .last,
-.business .bottom-list .last,
-.world .bottom-list .last,
-.sports .bottom-list .last,
-.edugraph .bottom-list .last,
-.inpicture .bottom-list .last,
-.bengal .bottom-list .last {
+.india .subarticle-list .last,
+.business .subarticle-list .last,
+.world .subarticle-list .last,
+.sports .subarticle-list .last,
+.edugraph .subarticle-list .last,
+.inpicture .subarticle-list .last,
+.bengal .subarticle-list .last {
     border: 0;
     padding-right: 0;
 }
 
-.india .bottom-list h2,
-.business .bottom-list h2,
-.world .bottom-list h2,
-.sports .bottom-list h2,
-.edugraph .bottom-list h2,
-.inpicture .bottom-list h2,
-.bengal .bottom-list h2 {
+.india .subarticle-list h2,
+.business .subarticle-list h2,
+.world .subarticle-list h2,
+.sports .subarticle-list h2,
+.edugraph .subarticle-list h2,
+.inpicture .subarticle-list h2,
+.bengal .subarticle-list h2 {
     margin: 16px 24px 24px;
     font-size: 20px;
     line-height: 27px;
 }
+
 
 /* entertainemnt*/
 
@@ -1266,12 +1257,12 @@ ul {
     padding-top: 0;
 }
 
-.entertainment .bottom-container .right-container .last {
+.entertainment .bottom-container .right-article-links .last {
     padding-bottom: 0;
     border: none;
 }
 
-.entertainment .bottom-container .right-container a {
+.entertainment .bottom-container .right-article-links a {
     display: flex;
 }
 
@@ -1285,6 +1276,8 @@ ul {
     color: #fff;
     padding-left: 16px;
 }
+
+/*inpicture*/
 
 .inpicture {
     background-color: #e4dece;
@@ -1300,18 +1293,18 @@ ul {
     bottom: 55px;
 }
 
-.inpicture .topnews i{
+.inpicture .topnews i {
     width: 72px;
     height: 72px;
     bottom: 78px;
 }
 
-.inpicture .container{
-    border:none;
+.inpicture .container {
+    border: none;
     padding-top: 0;
 }
 
-.inpicture .fig{
+.inpicture .fig {
     height: 200px;
 }
 
@@ -1425,11 +1418,11 @@ footer h2 {
     margin-left: 32px;
 }
 
-.follow-us .container .right-div a {
+.follow-us .container .website-links a {
     margin-left: 25px;
 }
 
-.follow-us .container .left-div .twitter-icon {
+.follow-us .container .social-platforms .twitter-icon {
     margin-left: 45px;
 }
 
@@ -1440,11 +1433,11 @@ footer h2 {
 
 /* footer - copyright*/
 
-.copyright{
+.copyright {
     padding: 40px 0;
 }
 
-.copyright .container{
+.copyright .container {
     width: 67.5%;
     margin: 0 auto;
     padding: 0 100px;
@@ -1456,4 +1449,3 @@ footer h2 {
 .color-red:hover{
     color:#b70000;
 }
-
